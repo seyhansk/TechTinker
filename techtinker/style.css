@@ -1,0 +1,70 @@
+body {
+  background-color: #fbf2ed;
+  z-index: 0;
+}
+
+.card {
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 0.7rem 1rem rgba(0, 0, 0, 0.25);
+}
+
+.link-hover {
+  transition: transform 1s;
+}
+
+.link-hover:hover {
+  transform: scale(1.1);
+}
+
+#banner-container {
+  margin-top: 100px;
+}
+
+#banner3-container,
+#banner2-container,
+#banner-container,
+#carousel-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+
+#banner3-container img,
+#banner2-container img,
+#banner-container img,
+#carousel-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+
+.navbar {
+  z-index: 1000;
+}
+
+.carousel.carousel-sliding .carousel-inner {
+  
+  transition: transform 0.5s ease !important; /* Geçiş süresi ve pürüzsüzlük ayarları */
+}
+
+#carousel-container {
+  width: 80%; /* Carousel container'ının genişliğini belirleyin */
+  margin: auto; /* Yatayda merkezlemek için */
+  overflow: hidden; /* İçeriğin dışarı taşmasını engelleyin */
+  
+}
+
+.carousel {
+  width: 100%; /* Carousel'ı container genişliği kadar yapın */
+  position: relative; /* Carousel'ı sabit konumda tutmak için */
+}
+  
+
+
